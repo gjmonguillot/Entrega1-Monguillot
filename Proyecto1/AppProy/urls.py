@@ -6,4 +6,7 @@ urlpatterns = [
      path('corredorformulario/', corredor_formulario, name= "CorredorFormulario"),
      path('carreraformulario/', carrera_formulario, name= "CarreraFormulario"),
      path('indumentariaformulario/', indumentaria_formulario, name= "IndumentariaFormulario"),
+
+     path('busquedacorredor/', busquedaCorredor, name="BusquedaCorredor"),
+     path('buscar/', buscar),
 ]

@@ -61,4 +61,15 @@ def indumentaria_formulario(request):
 
     miFormulario3 = IndumentariaFormulario() #formulario vacio
     return render(request, 'AppProy/indumentariaformulario.html', {"miFormulario3": miFormulario3})
-    
+
+
+
+def busquedaCorredor(request):
+    return render(request, "AppProy/busquedacorredor.html")
+
+
+def buscar(request):
+    respuesta = f"Estoy buscando al Corredor: {request.GET['nombre'] }" 
+    return HttpResponse(respuesta)
+
+
