@@ -1,0 +1,12 @@
+{% extends "AppProy/padre.html" %}
+
+{% block ContenidoQueCambia %}
+Ingrese sus datos personales:
+<form action="" method="POST" >{% csrf_token %}
+    <table>
+        {{ miFormulario.as_table }}
+    </table>
+    <input type="submit" value="Enviar" />
+</form>
+ 
+{% endblock ContenidoQueCambia %}
