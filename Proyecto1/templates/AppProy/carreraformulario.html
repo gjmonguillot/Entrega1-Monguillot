@@ -1,0 +1,12 @@
+{% extends "AppProy/padre.html" %}
+
+{% block ContenidoQueCambia %}
+Indique cuandos Km desea correr y sobre que superficie:
+<form action="" method="POST" >{% csrf_token %}
+    <table>
+        {{ miFormulario2.as_table }}
+    </table>
+    <input type="submit" value="Enviar" />
+</form>
+ 
+{% endblock ContenidoQueCambia %}

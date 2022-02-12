@@ -1,0 +1,12 @@
+{% extends "AppProy/padre.html" %}
+
+{% block ContenidoQueCambia %}
+Indique talles para recibir su regalo:
+<form action="" method="POST" >{% csrf_token %}
+    <table>
+        {{ miFormulario3.as_table }}
+    </table>
+    <input type="submit" value="Enviar" />
+</form>
+ 
+{% endblock ContenidoQueCambia %}
